@@ -1,26 +1,54 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px;
+  box-shadow: 0px 3px 1px #e2e2e2;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+nav h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Cyberform', sans-serif;
+}
+
+nav h3:hover {
+    color: #071531;
+    cursor: default;
+}
+
+@font-face {
+    font-family: 'Cyberform';
+    src: url(Fonts/CyberformDemo.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    box-shadow: 3px 3px 5px #e2e2e2;
+}
+
 nav ul {
-    list-style-type: none;
-    height: 35px;
-    overflow: hidden;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    box-shadow: 0px 3px 1px #e2e2e2;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav li {
-    float: left;
+  margin-left: 20px;
 }
 
 nav li a {
-    font-family: 'Arial', sans-serif; /* Sans serif as a fallback*/
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 nav li a:hover {
-    border-bottom: 3px solid #071531;
-
+  border-bottom: 3px solid #071531;
 }
