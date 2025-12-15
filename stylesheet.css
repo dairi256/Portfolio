@@ -1,3 +1,7 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 nav {
   display: flex;
   align-items: center;
@@ -7,6 +11,7 @@ nav {
   box-shadow: 0px 3px 1px #e2e2e2;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  z-index: 1;
 }
 
 nav h3 {
@@ -27,7 +32,7 @@ nav h3:hover {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    box-shadow: 3px 3px 5px #e2e2e2;
+    box-shadow: 5px 3px 5px #e2e2e2;
 }
 
 nav ul {
@@ -51,4 +56,10 @@ nav li a {
 
 nav li a:hover {
   border-bottom: 3px solid #071531;
+}
+
+.about {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    font-size: 18px;
 }

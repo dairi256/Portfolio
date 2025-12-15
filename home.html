@@ -5,8 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Derek Ingham - Portfolio Home</title>
         <link rel="stylesheet" href="stylesheet.css">
+
+        <style>
+            .background {
+                background-image: url(Media/navbg1.jpg); /*Image credited to Wallpapers Clan, will change later*/ 
+                background-size: cover;
+                width: 100vw;
+                height: 40vh; /*Will adjust the height depending on the about me part*/
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+                z-index: 2;
+            }
+
+            .about {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 20px;
+                border-radius: 10px;
+                z-index: 3;
+            }
+        </style>
     </head>
-    <body>
+    <body style="overflow-x: hidden;">
         <nav>
             <ul>
                 <h3>DEREK INGHAM</h3>
@@ -15,5 +37,15 @@
                 <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
+
+        <div class="background">
+            <div class="about">
+                <h1>About Me</h1>
+                <p>Hello, my name is Derek, and I'm beginning my journey into the world of programming.</p> <!--More about me will be added in time.-->
+                <div class="selfie">
+                    <!--Selfie of myself will go here.-->
+                </div>
+            </div>
+        </div>
     </body>
 </html>
